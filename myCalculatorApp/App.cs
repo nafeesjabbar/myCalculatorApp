@@ -44,7 +44,6 @@ namespace myCalculatorApp
                 }
                 Console.Clear();
 
-
                 switch (Operand)
                 {
                     case "*":
@@ -77,7 +76,6 @@ namespace myCalculatorApp
             }
 
             Console.Write("------ Thank You For Using Calculator! ------");
-
         }
     }
 }
