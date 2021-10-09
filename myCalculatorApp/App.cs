@@ -11,36 +11,36 @@ namespace myCalculatorApp
             double num2;
             string playAgain = "Y";
 
-            Console.WriteLine("------ Basic Calculator ------");
+            Console.WriteLine("------ Console Calculator in C# ------");
 
             while (playAgain == "Y" || playAgain == "y")
             {
-                Console.Write("Enter First Number: ");
+                Console.Write("Type in a number, then press Enter: ");
 
                 while (Double.TryParse(Console.ReadLine(), out num1) == false)
                 {
                     Console.Clear();
-                    Console.Write("Invlaid Input! Please Enter First Number: ");
+                    Console.Write("Invlaid Input! Type in a number, then press Enter: ");
                 }
                 Console.Clear();
 
-                Console.Write("Enter Operand: [ * ], [ / ], [ % ], [ + ], [ - ] ");
+                Console.Write("Type in operand, then press Enter: [ * ], [ / ], [ % ], [ + ], [ - ] ");
                 Operand = Convert.ToString(Console.ReadLine());
 
                 while (!Operand.Equals("*") && !Operand.Equals("/") && !Operand.Equals("%") && !Operand.Equals("+") && !Operand.Equals("-"))
                 {
                     Console.Clear();
-                    Console.Write("Invalid Input! Please Enter Operand: [ * ], [ / ], [ % ], [ + ], [ - ] ");
+                    Console.Write("Invalid Input! Type in operand, then press Enter: [ * ], [ / ], [ % ], [ + ], [ - ] ");
                     Operand = Convert.ToString(Console.ReadLine());
                 }
                 Console.Clear();
 
-                Console.Write("Enter Second Number: ");
+                Console.Write("Type in a number, then press Enter: ");
 
                 while (Double.TryParse(Console.ReadLine(), out num2) == false)
                 {
                     Console.Clear();
-                    Console.Write("Invlaid Input! Please Enter Second Number: ");
+                    Console.Write("Invlaid Input! Type in a number, then press Enter: ");
                 }
                 Console.Clear();
 
@@ -70,12 +70,12 @@ namespace myCalculatorApp
                         break;
                 }
 
-                Console.Write("------ Do You Want To Perform Another Calculation (Y/N)? ");
+                Console.Write("------ To perform another calculation, Type 'Y', then press Enter. To finish Enter any key: ");
                 playAgain = Console.ReadLine();
                 Console.Clear();
             }
 
-            Console.Write("------ Thank You For Using Calculator! ------");
+            Console.Write("------ End of application! ------");
         }
     }
 }
