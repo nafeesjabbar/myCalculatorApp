@@ -52,6 +52,7 @@ namespace myCalculatorApp
                         break;
                     case "/":
                         double division = num1 / num2;
+                        division = Math.Round(division, 2);
                         Console.WriteLine("Answer: " + division);
                         break;
                     case "%":
