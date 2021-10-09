@@ -29,14 +29,24 @@ namespace myCalculatorApp
                 Console.Clear();
 
                 // Asks user for math operation type.
-                Console.Write("Type in operand, then press Enter: [ * ], [ / ], [ % ], [ + ], [ - ] ");
+                Console.WriteLine("Select from the following list: \n");
+                Console.WriteLine("Multiplication: * \n");
+                Console.WriteLine("Division: / \n");
+                Console.WriteLine("Nodulo: * \n");
+                Console.WriteLine("Addition: + \n");
+                Console.WriteLine("Subtraction: - \n");
                 Operand = Convert.ToString(Console.ReadLine());
 
                 // Checks if user input matches math operand, if false while loop executes
                 while (!Operand.Equals("*") && !Operand.Equals("/") && !Operand.Equals("%") && !Operand.Equals("+") && !Operand.Equals("-"))
                 {
                     Console.Clear();
-                    Console.Write("Invalid Input! Type in operand, then press Enter: [ * ], [ / ], [ % ], [ + ], [ - ] ");
+                    Console.WriteLine("Invalid Input! Select from the following list: \n");
+                    Console.WriteLine("Multiplication: * \n");
+                    Console.WriteLine("Division: / \n");
+                    Console.WriteLine("Nodulo: * \n");
+                    Console.WriteLine("Addition: + \n");
+                    Console.WriteLine("Subtraction: - \n");
                     Operand = Convert.ToString(Console.ReadLine());
                 }
                 Console.Clear();
@@ -64,6 +74,7 @@ namespace myCalculatorApp
                         Console.Clear();
                         Console.Write("Invlaid Input! Type in a number, then press Enter: ");
                     }
+                    Console.Clear();
                 }
                 // Use switch statement to do the math.
                 switch (Operand)
